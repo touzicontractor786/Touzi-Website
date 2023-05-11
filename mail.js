@@ -1,5 +1,3 @@
-
-//initialize firebase
 const firebaseConfig = {
   apiKey: "AIzaSyA3smKQgj9SAR9Q9b4Nh4pUU26eoQ7Kk6E",
   authDomain: "portfolio-106e5.firebaseapp.com",
@@ -10,6 +8,8 @@ const firebaseConfig = {
   appId: "1:977842486384:web:538123598c376df492c8b5",
   measurementId: "G-75J6YWC13E"
 };
+// initialize firebase
+firebase.initializeApp(firebaseConfig);
 
 // reference your database
 var contactFormDB = firebase.database().ref("contactForm");
